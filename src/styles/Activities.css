@@ -1,0 +1,108 @@
+.activities{
+    display: flex;    
+    justify-content: space-between;
+}
+
+.recent__activities{
+    flex: 0.6;
+    background-color: white;
+    margin: 1.2rem;
+    margin-left: 0;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.activity__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.activity__headerLeft > h4{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.activity__headerLeft > p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.activity__headerRight{
+    margin-right: 0.8rem;
+    border: 1px solid rgba(128, 128, 128, 0.467);
+    border-radius: 1.2rem;
+}
+
+.activity__headerRight > button{
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.5rem 1rem;
+    color: rgb(6, 13, 122);
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: white;
+}
+
+
+
+.activity__headerRight > button:focus{
+    background-color: rgb(8, 8, 129);
+    color: white;
+}
+
+
+.activity__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 1.3rem;
+    font-weight: 500;
+}
+
+.coin__name{
+    width: 6rem;
+}
+
+.coin__name > img{
+    object-fit: contain;
+    height: 30px;
+}
+
+.transaction__state{
+    margin-right: 0.25rem;
+    width: 7rem;
+    padding: 0.5rem;
+    border-radius: 1.4rem;
+    font-weight: 600;
+    color: rgba(180, 180, 180, 0.815);
+    /* background-color: transparent; */
+}
+
+.ticon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    color: white;
+    border-radius: 50%;
+    margin-left: 1rem;
+    font-size: 80% !important;
+}
+
+.greenIcon{
+    background-color: green;
+}
+
+.redIcon{
+    background-color: red;
+}
+

@@ -1,0 +1,104 @@
+:root{
+    --blue: rgb(25, 25, 143);
+    --shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.header__left{
+    flex: 0.25;
+}
+
+.header__mid{
+    flex: 0.5;
+    margin: 0.5rem 1rem;
+    padding: 0.3rem 0.5rem;
+    background-color: whitesmoke;
+    border-radius: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0.7rem;
+}
+
+.header__search > input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 0.75rem;
+}
+
+.search__icon{
+    color: gray !important;
+}
+
+
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header__options{
+    display: flex;
+    margin-right: 1rem;
+}
+
+.header__options > span{ 
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.util__icons{
+    display: flex;
+}
+
+.icon__container{
+    position: relative;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow: var(--shadow);
+    
+}
+
+.icon__container:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.number{
+    font-size: 8px;
+    position: absolute;
+    width: 15px;
+    padding: 2px;
+    top: -5px;
+    right: -2px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    color: white;
+}
+
+.icon--active{
+    background-color: var(--blue);
+    color: white !important;
+}

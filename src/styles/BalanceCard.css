@@ -1,0 +1,82 @@
+.balance__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0.33;
+    color: rgba(255, 255, 255, 0.9);
+    background-image: url("https://www.seekpng.com/png/full/387-3872886_wave-cut-out-png-png-images-white-abstract.png");
+    border-radius: 1.1rem;
+}
+
+.card__header{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 1rem 1rem;
+}
+
+.balance__info > *{
+    margin: 0;
+}
+
+.balance__info > h3{
+    font-size: 1.6rem;
+}
+
+.circles{
+    position: absolute;
+    top: 3.5rem;
+    right: 25px;
+}
+
+.circle{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    border-radius: 50%;
+    /* margin-left: ; */
+}
+
+#cir2{
+    margin-left: -12px;
+}
+
+.card__details{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    padding: 1rem 0;
+}
+
+.valid_date{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.valid_date > h6, .card_holder > h6{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.valid_date > h4, .card_holder > h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.bgCircle{
+    height: 120px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    border-radius: 0 1.2rem 0 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.card__content{
+    z-index: 1;
+}
+

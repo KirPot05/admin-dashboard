@@ -1,0 +1,210 @@
+:root{
+    --blue: rgb(10, 35, 148);
+    --shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.24); 
+}
+
+
+.dashboard{
+    margin-top: 5rem;
+    position: absolute;
+    width: 80%;
+    right: 0;
+}
+
+.dashboard__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.dashboard__header > h3{
+    margin: 0;
+}
+
+.dashboard__headerOptions{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather__left > span{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.25rem;
+}
+
+.weather, .filter{
+    background-color: white;
+    padding: 0.4rem 0.7rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    font-weight: 500;
+    border: none;
+}
+
+.weather:hover, .filter:hover, .filter:focus, .weather:focus{
+    background-color: var(--blue);
+    color: white;
+}
+
+.filter > * {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.price__cards{
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+
+.price__card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.coin__image > img{
+    object-fit: contain;
+    height: 60px;
+}
+
+.price > h2{
+    font-size: 1.5rem;
+}
+
+
+.chart__container{
+    display: flex;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+
+.statistics{
+    display: flex;
+    flex: 0.25;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border-radius: 1.2rem;
+}
+
+.statistics > h3{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.stat__img > img{
+    object-fit: contain;
+    height: 180px;
+}
+
+.stats{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.stat__info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat__price{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.stat__category{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.market__overview{
+    flex: 0.75;
+    margin-left: 1.5rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+}
+
+.market__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 0.8rem !important;
+
+}
+
+.market__headerLeft > h3{
+    font-size: 1.4rem;
+}
+
+
+
+.market__headerRight{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.market__headerRight > select{
+    padding: 0.3rem 1.5rem;
+    border: 1px solid rgb(170, 170, 170);
+    outline: none;
+    border-radius: 1rem;
+
+}
+
+.coin__option{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.checked{
+    color: var(--blue) !important;
+}
+
+.market__graph{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.market__graph > img {
+    object-fit: cover;
+    height: 300px;
+    width: 90%;
+}
+
+.balanceCard__container{
+    display: flex;
+    margin: 1.2rem;
+    margin-left: 0;
+    gap: 1.3rem;
+}
+
+.trade__section{
+    display: flex;
+}
