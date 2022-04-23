@@ -1,8 +1,12 @@
 import "../styles/BalanceCard.css";
 
-function BalanceCard({ bgColor, balance, circle, direction }) {
+function BalanceCard({ bgColor, balance, circle, sidebarOpen }) {
     return (
-        <div className='balance__card' style={{ backgroundColor: bgColor }}>
+        <div className='balance__card' style={{ 
+            backgroundColor: bgColor,
+            flex: `${sidebarOpen ? '0.321' : '0.321'}`
+        
+        }}>
 
             {circle && <span className="bgCircle"></span>}
             <div class="card__content">

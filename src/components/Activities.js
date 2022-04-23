@@ -3,7 +3,7 @@ import '../styles/Activities.css';
 import Order from './Order';
 
 
-function Activities() {
+function Activities({sidebarOpen}) {
 
 	const Activity = (state, coinIcon ,name, time, transaction, transactionState, color) => {
 		
@@ -13,7 +13,7 @@ function Activities() {
 
 		return (
 			<div class="activity__row" style={{
-				border: `${transactionState==='Pending' ? '1px solid lightgray' : 'none'}`
+				border: `${transactionState==='Pending' ? '1px solid lightgray' : 'none'}`,
 			}}>
 				{state ? greenIcon : redIcon }
 				<div class="coin__name">
@@ -42,8 +42,17 @@ function Activities() {
 	}
 
 	return (
-		<div className='activities'>
-			<div class="recent__activities">
+		<div className='activities' 
+			style={{
+				marginRight: `${!sidebarOpen ? "4.4rem": "3rem"}`
+			}}
+		>
+			<div class="recent__activities" 
+				style={{
+					flex: `${sidebarOpen ? "0.58" : "0.48"}`,
+					margin: `${sidebarOpen ? "1.2rem 0.5rem 1.2rem 0" : "1.2rem 0.5rem 1.2rem 0"}`
+				}}
+			>
 				<div class="activity__header">
 					<div class="activity__headerLeft">
 						<h4>Recent Trading Activities</h4>
@@ -72,8 +81,8 @@ function Activities() {
 				</div>
 			</div>
 	
-			<Order operation="Sell" name="Litecoin" />
-			<Order operation="Buy" name="Bitcoin" />
+			<Order operation="Sell" name="Litecoin" sidebarOpen={sidebarOpen}/>
+			<Order operation="Buy" name="Bitcoin" sidebarOpen={sidebarOpen}/>
 
 		</div>
 	)

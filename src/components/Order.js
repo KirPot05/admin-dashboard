@@ -2,9 +2,14 @@ import { KeyboardArrowDownOutlined, MoreVertOutlined } from '@mui/icons-material
 import { IconButton } from '@mui/material';
 import '../styles/Order.css';
 
-function Order({ operation, Icon, name, color }) {
+function Order({ operation, Icon, name, color, sidebarOpen }) {
     return (
-        <div className='order'>
+        <div className='order' 
+            style={{
+               flex: `${sidebarOpen ? '0.23' : "0.24"}`,
+               margin: `${sidebarOpen ? '1.2rem 0.7rem' : "1.2rem 0"}`
+            }}
+        >
             <div class="order__header">
                 <h3> {operation} Order </h3>
                 <IconButton>

@@ -1,5 +1,6 @@
 .sidebar{
     min-height: 100vh;
+    min-width: 16rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +54,8 @@
 }
 
 .sidebar__footer{
-    margin-top: 8rem;
+    position: fixed;
+    bottom: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +64,10 @@
 
 .sidebar__footer > h5{
     font-size: 14px;
+    margin: 5px;
 }
 
 .sidebar__footer > p{
     font-size: 13px;
+    margin: 3px;
 }

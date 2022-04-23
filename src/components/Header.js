@@ -1,14 +1,15 @@
-import {SearchOutlined, NotificationsNone, ChatOutlined, CardGiftcardOutlined, SettingsOutlined } from '@mui/icons-material';
+import {SearchOutlined, NotificationsNone, ChatOutlined, CardGiftcardOutlined, SettingsOutlined, MenuOutlined } from '@mui/icons-material';
 import "../styles/Header.css";
+import { IconButton } from '@mui/material'
 
-function Header() {
+function Header({setSidebarOpen}) {
 
     const HeaderIcon = (Icon, number, selected) => {
         return (
             <div class="icon">
 
             <div className={`icon__container ${selected && 'icon--active'}`}>
-                <Icon/>
+                <Icon className="util_Icon"/>
                 {!selected && <div className='number' >
                     <span>{number}</span>
                 </div>}
@@ -21,7 +22,10 @@ function Header() {
     return (
         <div className='header'>
             <div class="header__left">
-                <img src="" alt="" />
+                <IconButton onClick={() => setSidebarOpen(true)}>
+                    <MenuOutlined />
+                </IconButton>
+                <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="" />
             </div>
 
             <div class="header__mid">
@@ -34,7 +38,7 @@ function Header() {
             <div class="header__right">
                 <div class="header__options">
                     <span>Socials</span>
-                    <span>Live Training</span>
+                    <span> <span className="redico"></span> Live Training</span>
                     <span>Blog</span>
                     <span>Trading News</span>
                 </div>

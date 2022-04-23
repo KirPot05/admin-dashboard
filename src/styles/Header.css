@@ -21,10 +21,18 @@
     flex: 0.25;
 }
 
+
+.header__left > img{
+    object-fit: contain;
+    height: 50px;
+    margin-left: 15px;
+}
+
+
 .header__mid{
-    flex: 0.5;
-    margin: 0.5rem 1rem;
-    padding: 0.3rem 0.5rem;
+    flex: 0.52;
+    margin: 0.5rem 1.2rem;
+    padding: 0.3rem 0.7rem;
     background-color: whitesmoke;
     border-radius: 1.2rem;
     box-shadow: var(--shadow);
@@ -42,7 +50,7 @@
     outline: none;
     border: none;
     background-color: transparent;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .search__icon{
@@ -59,13 +67,23 @@
 
 .header__options{
     display: flex;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 
 .header__options > span{ 
-    margin-left: 1rem;
-    font-size: 0.9rem;
+    margin: 0.25rem;
+    /* font-size: 0.9rem; */
+    padding: 0.5rem 0.7rem;
+    border-radius: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
 }
+
+.header__options > span:hover{
+    background-color: rgba(128, 128, 128, 0.451);
+    transition-duration: 0.3s;
+}
+
 
 .util__icons{
     display: flex;
@@ -74,14 +92,19 @@
 .icon__container{
     position: relative;
     padding: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: rgba(231, 231, 231, 0.6);
     box-shadow: var(--shadow);
-    
+    color: rgb(70, 70, 70);
 }
 
 .icon__container:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.icon--active{
     background-color: var(--blue);
     color: white;
 }
@@ -98,7 +121,14 @@
     color: white;
 }
 
-.icon--active{
-    background-color: var(--blue);
-    color: white !important;
+
+
+.redico{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(219, 8, 8);
+    height: 7px;
+    width: 7px;
+    margin-bottom: 1px;
 }
+

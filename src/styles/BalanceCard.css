@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    flex: 0.33;
     color: rgba(255, 255, 255, 0.9);
     background-image: url("https://www.seekpng.com/png/full/387-3872886_wave-cut-out-png-png-images-white-abstract.png");
     border-radius: 1.1rem;
