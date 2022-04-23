@@ -2,6 +2,7 @@ import { AccountBalanceOutlined, CloseOutlined, CreditCardOutlined, CurrencyBitc
 import { IconButton } from '@mui/material'
 import '../styles/Sidebar.css';
 import SidebarOption from './SidebarOption';
+import logo from '../logo.png';
 
 
 function Sidebar({sidebarOpen, setSidebarOpen}) {
@@ -9,7 +10,7 @@ function Sidebar({sidebarOpen, setSidebarOpen}) {
     return (
         sidebarOpen && (<div className='sidebar'>
             <div class="sidebar__header">
-                <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="" />
+                <img src={logo} alt="" />
                 <IconButton onClick={() => setSidebarOpen(false)}>
                     <CloseOutlined />
                 </IconButton>

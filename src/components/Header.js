@@ -1,6 +1,7 @@
 import {SearchOutlined, NotificationsNone, ChatOutlined, CardGiftcardOutlined, SettingsOutlined, MenuOutlined } from '@mui/icons-material';
 import "../styles/Header.css";
-import { IconButton } from '@mui/material'
+import { IconButton } from '@mui/material';
+import logo from '../logo.png';
 
 function Header({setSidebarOpen}) {
 
@@ -25,7 +26,7 @@ function Header({setSidebarOpen}) {
                 <IconButton onClick={() => setSidebarOpen(true)}>
                     <MenuOutlined />
                 </IconButton>
-                <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="" />
+                <img src={logo} alt="" />
             </div>
 
             <div class="header__mid">
