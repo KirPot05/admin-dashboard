@@ -81,8 +81,8 @@ function Activities({sidebarOpen}) {
 				</div>
 			</div>
 	
-			<Order operation="Sell" name="Litecoin" sidebarOpen={sidebarOpen}/>
-			<Order operation="Buy" name="Bitcoin" sidebarOpen={sidebarOpen}/>
+			<Order Icon="https://cryptologos.cc/logos/litecoin-ltc-logo.png?v=022" operation="Sell" name="Litecoin" sidebarOpen={sidebarOpen} color="rgb(9, 9, 126)" />
+			<Order Icon="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022" operation="Buy" name="Bitcoin" sidebarOpen={sidebarOpen} color="rgb(221, 63, 6)" />
 
 		</div>
 	)

@@ -48,12 +48,12 @@ function SendCrypto({ token }) {
                     <h6>View More</h6>
                 </div>
                 <div class="contacts">
-                    {contact('', "Martha", "@martha")}
-                    {contact('', "Cindy", "@cindy")}
-                    {contact('', "Olivia", "@olivia")}
-                    {contact('', "David", "@david")}
-                    {contact('', "Sameul", "@samuel")}
-                    {contact('', "Jono", "@jono")}
+                    {contact('https://www.whatsappimages.in/wp-content/uploads/2021/12/girl-New-Superb-Whatsapp-Dp-Profile-Images-photo.jpg', "Martha", "@martha")}
+                    {contact('https://www.jeancoutu.com/globalassets/revamp/photo/conseils-photo/20160302-01-reseaux-sociaux-profil/photo-profil_301783868.jpg', "Cindy", "@cindy")}
+                    {contact('https://shotkit.com/wp-content/uploads/2021/06/cool-profile-pic-matheus-ferrero.jpeg', "Olivia", "@olivia")}
+                    {contact('https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg', "David", "@david")}
+                    {contact('https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg', "Sameul", "@samuel")}
+                    {contact('https://i.pinimg.com/originals/dc/91/41/dc91418a47b9c9e85c3a10d13d275574.jpg', "Jono", "@jono")}
                 </div>
             </div>
 

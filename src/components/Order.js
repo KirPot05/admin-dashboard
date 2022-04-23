@@ -3,12 +3,19 @@ import { IconButton } from '@mui/material';
 import '../styles/Order.css';
 
 function Order({ operation, Icon, name, color, sidebarOpen }) {
+
+    const changeBg = (e) => {
+        e.currentTarget.style.background = color;
+    }
+
     return (
-        <div className='order' 
+        <div className='order'
             style={{
-               flex: `${sidebarOpen ? '0.23' : "0.24"}`,
-               margin: `${sidebarOpen ? '1.2rem 0.7rem' : "1.2rem 0"}`
+                flex: `${sidebarOpen ? '0.23' : "0.24"}`,
+                margin: `${sidebarOpen ? '1.2rem 0.7rem' : "1.2rem 0"}`
             }}
+
+
         >
             <div class="order__header">
                 <h3> {operation} Order </h3>
@@ -30,19 +37,30 @@ function Order({ operation, Icon, name, color, sidebarOpen }) {
             </div>
 
             <div class="order__stats">
+
+
+
                 <div class="stat__header">
                     <span>Price</span>
                     <span>Amount</span>
                     <span>Total</span>
                 </div>
 
-                <div class="ostats">
-                    <span>82.3</span>
-                    <span>0.15</span>
-                    <span>$134.12</span>
-                </div>
 
-                <div class="ostats">
+                {Array.from({ length: 6 }).map((_, idx) => {
+                    return (<div 
+                        class="ostats" 
+                        key={idx}
+                        onMouseOver = {changeBg}    
+                        onMouseLeave = {(e) => e.currentTarget.style.background = 'white'}
+                    >
+                        <span>82.3</span>
+                        <span>0.15</span>
+                        <span>$134.12</span>
+                    </div>)
+                })}
+
+                {/* <div class="ostats">
                     <span>82.3</span>
                     <span>0.15</span>
                     <span>$134.12</span>
@@ -70,7 +88,7 @@ function Order({ operation, Icon, name, color, sidebarOpen }) {
                     <span>82.3</span>
                     <span>0.15</span>
                     <span>$134.12</span>
-                </div>
+                </div> */}
 
 
             </div>

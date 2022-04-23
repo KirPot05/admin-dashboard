@@ -29,6 +29,14 @@
 
 .token__type > span{    
     font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.token__type > img{
+    object-fit: contain;
+    height: 35px;
+    margin-right: 2px;
+    margin-bottom: 2px;
 }
 
 .send__field{
@@ -95,9 +103,9 @@
 }
 
 .contact > img{
-    object-fit: contain;
-    height: 50px;
-    width: 50px;
+    object-fit: cover;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
 }
 

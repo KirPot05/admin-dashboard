@@ -172,8 +172,8 @@ function Dashboard({ sidebarOpen }) {
 				}}
 			
 			>
-				<SendCrypto />
-				<Trade />
+				<SendCrypto token="https://cryptologos.cc/logos/litecoin-ltc-logo.png?v=022" />
+				<Trade token="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022" />
 			</div>
 
 
