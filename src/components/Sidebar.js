@@ -10,9 +10,8 @@ function Sidebar({sidebarOpen, setSidebarOpen}) {
         sidebarOpen && (<div className='sidebar'>
             <div class="sidebar__header">
                 <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="" />
-                <IconButton>
-                    {/* <MenuOutlined/> */}
-                    <CloseOutlined onClick={() => setSidebarOpen(false)}/>
+                <IconButton onClick={() => setSidebarOpen(false)}>
+                    <CloseOutlined />
                 </IconButton>
             </div>
 
